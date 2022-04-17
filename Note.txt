@@ -1,0 +1,319 @@
+Arithmetic Operators
+Assignment Operators
+Relational Operators
+Logical Operators
+Bitwise Operators
+Other Operators
+
+Assignment Operators
+=       equal 
++=       a=a+b
+-=
+/=
+*=
+
+Relational Operators
+==
+!=
+<=
+>=
+<
+
+Logical Operators
+&&  and
+||  Or
+!   Not
+
+Bitwise Operators
+
+&   AND
+!   BINARY OR 
+^   BINARRY XOR
+~   BINARY ONE COMPLEMENT
+<<  BINARRY SIFT LEFT
+>>  BINARAY SIFT RIGHT
+
+OTHER CONDITIONS
+sizeof      sizeof Data type Passed
+?:          return value based on CONDITIONS
+&           memeory address of operand 
+.           access menory of struct
+->          used with pointers to access class or struct varibles 
+<<          print out put value
+>>          get input  value
+
+
+
+
+
+STATEMENTS IN C++     IF ELSE STATEMENTS 
+
+if conditon is true then  then run block of code
+NESTED STATEMENTS
+we can also use id satement in if statemnet
+
+IF WE HAVE ONLY ONE CONDITION WE CAN ALSO EMITT {}
+
+
+LOOPS 
+ for        
+ while              
+ do while       run one the check condition
+
+we can also pass several condition in side loop and verify  them on the base of our conditions
+
+for LOOPS
+initilize expression  test condition  Body of loop and   Update  expression
+
+stop using infinite Loop like
+
+for(int i=1; i>=; i++){
+    Block of code run infinte time never stop
+}
+
+FOR LOOP IS USED     WHEN WE KNOW THE NUMBER OF ITERATIONS
+WHILE / DO WHILE LOOP IS USED     WHEN NUMBER OF ITERATIONS IS UNKNOWN
+
+While loop
+    WHILE(condition){
+        Body of Loop
+    }
+
+    if consdition is true Block of code runs
+
+DO WHILE LOOP
+    it is exicuted at one then it check out the conditions
+
+BREAK 
+    iT TERMINATE THE all LOOP when it is concounter
+    
+    if(consdition to break){
+        break;
+    } 
+COUNTNUE
+    it will skip the item when it meet that condition move to next ITERATIONS
+    
+    if(condition to break){
+        continue
+    }
+    run next step in loop
+
+SWITCH STATEMENTS
+    equal to constant if value match then run block of code  and use break statemnet
+    also used Default statemnet if no consdition is match then Default  case runs
+
+GOTO STATEMENTS 
+ it is used to jum into any part of program     but it make Logic more complex 
+ 
+ {
+     goto jump;
+ }
+ jump: average = sum /(i-1)
+ return 0
+
+Basic statemnet of goto in C++
+
+
+FUNCTIONS IN CPP
+MAIN POINTS AND  bASIC OF FUNCTION
+    Two main types User defined and Pre-defined Libraies
+    when function invoke run block of code
+    Two method of declearing FUNCTIONS
+1
+    returnType functionName(parameter) {
+        function body
+    } 
+2
+    void greet(){
+
+    }
+
+when we are using void() means function will not return anything
+if we want to return a value from a function we need to define the DATATYPE we return from function
+return also means that function have ended 
+
+
+
+Study about the Most used libraries in cpp
+OVERLOADING FUNCTIONS 
+    functions having same name but differnt arguments pass or differnt type data types passes 
+
+functions with default parameters
+if no parameter is passed them Default parameter  will be taken 
+
+ONE WE PASSED DEFAULT PARAMETER TO A FUNCTION ALL PAARMETERS MUST HAVE DEFAULT VALUES
+
+
+VariBle CLASSES IN C++
+ Every varible in C++ has two featurs 
+ TYPE CLASS
+ STORAGE CLASS
+
+TYPE CLASS
+    CAN store varibles int , flaot  , char
+
+Storage Class has $ major Types 
+LOCAL  VARIBLES 
+GLOBAL VARIBLES
+STATIC LOCAL VARIBLES
+REGITER VARIBLES
+THREAD LOCAL VARIBLE 
+
+LOCAL VARIBLES
+     defined and used inside of a function
+    life is destroyed when function exits 
+
+GLOBAL VARIBLE
+        defined outside of a function  can be used in whole program
+        life end when programm ends 
+
+Static LOCAL VARIBLES
+        exists onlt inside of a function when declear similar to local 
+        But it life starts when function Start and End when Program End 
+        STATIC is used before declearing 
+
+REGITER VARIBLE
+    used in particular function only 
+    deprected in C++ 11  it is faster store  varibles in process 
+
+THREAD LOCAL VARIBLES
+    thread local keyword is used in define it 
+
+
+RECURSSION IN c++
+ function call itsef inside of a function
+factorial is a common example of it 
+    if erro it is harder to debugg 
+
+REFERANCE IN c++
+    RETURN a value by referance in a function and used in a programm
+
+
+Array 
+    Most Important Data Type in Programming 
+    we can decalare a arry with data type and  [ ]
+    store data in arary in memeory addresses 
+
+    Intilize an Array 
+    int [6]={10,12,15,15,68,59};
+    we can also insitize an empty arry compiler automatically Calaculate
+
+    If we insilize 6 varible in an array and give three Items  compiler will assigin random value in remaining spaces 
+                        
+    Muti deminsional Array
+        flaot x[2][3][5]            This can Hold Up to 30 items
+        we can also Insilize Multi dimensionL ARRAY  Like normal Array 
+        int  test[2][3] = { {2, 4, 5}, {9, 0, 19}};
+ Three DimensionL Arary 
+    int test[2][3][4]={
+        { 
+        {1,2,3,4},{1,2,3,4},{1,2,3,4}
+        },
+        {
+        {1,2,3,4},{1,2,3,4},{1,2,3,4},
+        }
+    }                        
+Meaning two Sub arrays In two Arrays Three SUb Arrays and Each Arrat Have Four Items 
+
+
+PASSING ARRAY TO A FUNCTION 
+    it handel passing an array toa function in such away to save memory 
+    array  passed as a parameter  of function we inside a function manuplate the Original Arrays
+
+WE CAN ALSO  RETURN AN ARRAY FROM A FUNCTION AN ARRAY IS NOT RETURN FROM A FUNCTION INSTED MEMORY  ADDRESS IS RETURN  WITH THE HELP OF POINTERS      
+
+STRINGSS :
+    starndar C++ Libarary for string 
+    C string
+
+In C
+    string is collections of Characters store in a Array  C++ also suppot This      
+
+In C++
+    string is used to declear a string 
+    getline(cin, str);   is used to get Line fo text from the user     
+
+STRUCTURE IN C++
+    it is collection of varibles of differnt data Types  similar to Class 
+    when they are created No Memeory is allocated to them 
+        It is Blue print of Varibles 
+        Membors fo struct are access By . Notitotion 
+
+
+
+REALATING STRUCTURES WITH FUNCTIONS 
+structure are Varible and Data can Be passed to a function 
+
+Pointers:
+    Varibles that can store Memeory addres of othe Varible 
+
+Pointers and Structure 
+    Pointer can be created of  Like flaot int  OR can Be created for used defined Like Structe 
+    address of Varible is store in Pointer Varible and Pointes towards varible
+    Varibles can be access By Pointers 
+
+
+Enumeration In CPP
+    are use to defined data types That consists  of Intergral constants 
+    we can also0 defined deaults Values In enum 
+    used for Creating Blue print of Valribles 
+        
+Classs 
+    Blue print of Object 
+    public can Be access by all anywhere in Program
+    privite  can be  only access with in class
+
+Constructor :
+    is a function that is called when a Object is created 
+    dose,t have type and public 
+    If we have not defined a constructor in our class, then the C++ compiler will automatically create a default constructor with an empty code and no parameters.    
+
+Pointers :
+    used to store memory address of a varible in a It 
+    are declear by * and get address by & 
+    we can also change Data in Pointers and memory 
+
+   Array and Pointers 
+    we can also use Pointer in array and get the memory address of Items 
+
+Memory Managment   new and delete
+    Dynamic memory allocation 
+    In other programming Languages compiler automatically  manage Memeory But not in C++
+    we have to delocate  memory memory manually after we have no use 
+    useing NEW and DELETE Operator 
+
+    if program we a large amount of memeory system may carsh   using  no memory avalible   
+    delete can prevent it           
+
+    Make memory Managment more efficent 
+
+Inherantice
+    featur of Object Orinatation Programming  allow use to creat new classe from existing base classes
+    Derived class Inherantice featurs of base class and can add additional featurs 
+    if in relation 
+
+    public : 
+        if derf=ived class is declear in public then members  of base class are inherited by derived class  just as they are
+    private :
+         In this case, all the members of the base class become private members in the derived class.         
+    proctected :
+        The public members of the base class become protected members in the derived class.
+
+        privated cannot be access 
+
+ Data hiding is a fundamental concept of Obejct Orination Programming . It restric acccess of private members from  outside of class 
+ procted members can be  access by derived class and are inaccessable from outside.
+
+ Friend Functions that break this rule and allow us to access member functions from outside the class.             
+    A friend function can access the private and protected data of a class
+
+Templates :
+    allow us to write generic program; 
+        function template ; can use class template  to creat a single class
+        class template ;    make code short and managable
+         a blueprint or formula for creating a generic class or a function.`
+Polimerization is as same as Inherantice 
+    , the same entity (function or object) behaves differently in different scenarios.
+    
+Exception Handeler
+    are error handeler as Try {} catch {} throw err()    
